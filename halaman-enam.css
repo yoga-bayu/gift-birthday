@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+:root {
+    --gift-color: #d5869d;
+    --gift-seccond-color: #fff;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background-image: url(aset/bg3.png);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+p {
+    font-size: 35px;
+    font-family: "Charm", cursive;
+    text-align: center;
+}
+
+.image-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-1 {
+    width: 250px;
+}
+
+.image-2 {
+    position: absolute;
+    margin-left: 410px;
+    margin-top: 100px;
+    width: 380px;
+}
+
+.btn {
+    position: absolute;
+    top: calc(100% - 5rem);
+    min-width: 120px;
+    padding: .75rem 1rem;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: var(--gift-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 4rem var(--gift-color);
+}
+
+.btn-yes {
+    left: 50%;
+    transform: translateX(calc(-100% - 1rem));
+    z-index: 1;
+}
+
+.btn-no {
+    left: calc(50% + 1rem);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.next {
+    position: absolute;
+    margin-left: 667px;
+    margin-top: 500px;
+}
+
+.next{
+   background-color: var(--gift-color);
+   width: 120px;
+   height: 50px;
+   border-radius: 5px;
+   border: var(--gift-color);
+   box-shadow: 0 0 1rem var(--gift-color);
+}
+
+.next a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+@media (max-width: 476px) {
+        body {
+        background-image: url(aset/bg5.png);
+        }
+
+        p {
+            font-size: 25px;
+            margin-top: 45px;
+        }
+
+        .image-2 {
+            width: 300px;
+            margin-left: 60px;
+            margin-top: 200px;
+        }
+        
+        .image-3 {
+            width: 200px;
+            margin-left: 200px;
+            margin-top: 200px;
+        }
+
+        .next {
+            margin-left: 215px;
+            margin-top: 589px;
+        }
+}

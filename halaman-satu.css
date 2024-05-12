@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+:root {
+    --text-color: #fff;
+    --main-color: #0ef;
+    --gift-color: #d5869d;
+}
+
+body {
+    background: #25252b;
+    overflow: hidden;
+}
+
+/* .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0,0.75), url(aset/bg.png));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+} */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .text {
+    position: relative;
+    color: var(--text-color );
+    text-shadow: 0 0 1rem var(--gift-color);
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.container .text.text-first {
+    color: var(--gift-color);
+    font-weight: 800;
+    text-shadow: 0 0 1rem var(--gift-color);
+}
+
+.container .text-seccond:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--gift-color);
+    font-weight: 600;
+    text-shadow: 0 0 1rem var(--gift-color);
+    width: 100%;
+    height: 100%;
+    background-color: #25252b;
+    border-left: 2px solid var(--gift-color);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.balon2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 400px;
+}
+
+.balon3-r {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    margin-left: 1300px;
+}
+
+.balon4-r {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    margin-left: 1400px;
+    margin-top: 300px;
+}
+
+.balon5-l {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin-right: 1300px;
+}
+
+.balon6-l {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-right: 1400px;
+    margin-top: 300px;
+}
+
+.cake-img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 320px;
+}
+
+.btn {
+    position: absolute;
+    margin-top: 560px;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--gift-color);
+    /* margin-left: 300px; */
+    box-shadow: 0 0 1rem var(--gift-color);
+}
+
+
+.btn a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+@media (max-width: 476px) {
+    .container .text  {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .cake-img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: -20px;
+    }
+
+    .balon3-r {
+        width: 300px;
+        height: 250px;
+        margin-left: 430px;
+        margin-top: 400px;
+    }
+
+    .balon4-r {
+        width: 250px;
+        height: 250px;
+        margin-left: 500px;
+        margin-top: 600px;
+    }
+
+    .balon5-l {
+        width: 500px;
+        height: 500px;
+        margin-right: 430px;
+        margin-top: 400px;
+    }
+
+    .balon6-l {
+        width: 500px;
+        height: 500px;
+        margin-right: 500px;
+        margin-top: 620px;
+    }
+
+    .btn {
+        margin-top: 600px;
+        margin-left: 0;
+    }
+}
